@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>调研 flv.js | 肥锐&#39;s 技术栈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="JavaScript,插件" />
+    
+    <meta name="description" content="前言&amp;emsp;&amp;emsp;目前常见的直播协议及其简单介绍如下：  RTMP: 底层基于TCP，在浏览器端依赖Flash。 HTTP-FLV: 基于HTTP流式IO传输FLV，依赖浏览器支持播放FLV。 WebSocket-FLV: 基于WebSocket传输FLV，依赖浏览器支持播放FLV。WebSocket建立在HTTP之上，建立WebSocket连接前还要先建立HTTP连接。 HLS: Ht">
+<meta name="keywords" content="JavaScript,插件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="调研 flv.js">
+<meta property="og:url" content="http://www.whbxyr.cn/2017/07/17/flvjs/index.html">
+<meta property="og:site_name" content="肥锐&#39;s 技术栈">
+<meta property="og:description" content="前言&amp;emsp;&amp;emsp;目前常见的直播协议及其简单介绍如下：  RTMP: 底层基于TCP，在浏览器端依赖Flash。 HTTP-FLV: 基于HTTP流式IO传输FLV，依赖浏览器支持播放FLV。 WebSocket-FLV: 基于WebSocket传输FLV，依赖浏览器支持播放FLV。WebSocket建立在HTTP之上，建立WebSocket连接前还要先建立HTTP连接。 HLS: Ht">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://www.whbxyr.cn/2017/07/17/flvjs/1.png">
+<meta property="og:updated_time" content="2018-06-01T15:16:53.560Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="调研 flv.js">
+<meta name="twitter:description" content="前言&amp;emsp;&amp;emsp;目前常见的直播协议及其简单介绍如下：  RTMP: 底层基于TCP，在浏览器端依赖Flash。 HTTP-FLV: 基于HTTP流式IO传输FLV，依赖浏览器支持播放FLV。 WebSocket-FLV: 基于WebSocket传输FLV，依赖浏览器支持播放FLV。WebSocket建立在HTTP之上，建立WebSocket连接前还要先建立HTTP连接。 HLS: Ht">
+<meta name="twitter:image" content="http://www.whbxyr.cn/2017/07/17/flvjs/1.png">
+    
+
+    
+        <link rel="alternate" href="/" title="肥锐&#39;s 技术栈" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">我只是刚好有一些想法以及一台电脑。  ——阿肥锐</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">index.主页</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/archives/">index.归档</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/categories/文学类/">index.文学</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/contact/">index.联系</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/技术类-前端/">技术类-前端</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-flvjs" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        调研 flv.js
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/07/17/flvjs/" class="article-date">
+            <time datetime="2017-07-17T07:17:16.000Z" itemprop="datePublished">2017-07-17</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>, <a class="tag-link" href="/tags/插件/">插件</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;&emsp;目前常见的直播协议及其简单介绍如下：</p>
+<ul>
+<li>RTMP: 底层基于TCP，在浏览器端依赖Flash。</li>
+<li>HTTP-FLV: 基于HTTP流式IO传输FLV，依赖浏览器支持播放FLV。</li>
+<li>WebSocket-FLV: 基于WebSocket传输FLV，依赖浏览器支持播放FLV。WebSocket建立在HTTP之上，建立WebSocket连接前还要先建立HTTP连接。</li>
+<li>HLS: Http Live Streaming，苹果提出基于HTTP的流媒体传输协议。HTML5可以直接打开播放。</li>
+<li>RTP: 基于UDP，延迟1秒，浏览器不支持。</li>
+</ul>
+<p>&emsp;&emsp;常见直播协议延迟与性能数据（只做对比参考）如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">传输协议</th>
+<th style="text-align:center">播放器</th>
+<th style="text-align:center">延迟</th>
+<th style="text-align:center">内存</th>
+<th style="text-align:center">CPU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">RTMP</td>
+<td style="text-align:center">Flash</td>
+<td style="text-align:center">1s</td>
+<td style="text-align:center">430M</td>
+<td style="text-align:center">11%</td>
+</tr>
+<tr>
+<td style="text-align:left">HTTP-FLV</td>
+<td style="text-align:center">Video</td>
+<td style="text-align:center">1s</td>
+<td style="text-align:center">310M</td>
+<td style="text-align:center">4.4%</td>
+</tr>
+<tr>
+<td style="text-align:left">HLS</td>
+<td style="text-align:center">Video</td>
+<td style="text-align:center">20s</td>
+<td style="text-align:center">205M</td>
+<td style="text-align:center">3%</td>
+</tr>
+</tbody>
+</table>
+<p>在支持浏览器的协议里，延迟排序是：<br>&emsp;&emsp;RTMP = HTTP-FLV = WebSocket-FLV &lt; HLS<br>而性能排序则恰好相反：<br>&emsp;&emsp;RTMP &gt; HTTP-FLV = WebSocket-FLV &gt; HLS<br>从这点上看的话， 延迟小的性能反而不好。</p>
+<p>另外，通过以上比较，综合延迟以及性能，可见在浏览器上做直播的话，使用 HTTP-FLV 协议是不错的。</p>
+<h2 id="什么是flv-js？"><a href="#什么是flv-js？" class="headerlink" title="什么是flv.js？"></a>什么是<code>flv.js</code>？</h2><p>&emsp;&emsp;<code>flv.js</code>是一个不借助于<code>Flash</code>却可以实现在浏览器上播放<code>HTML5 Flash流媒体视频(FLV)</code>的，由纯原生的JavaScript编写的<code>js插件</code>。<br>&emsp;&emsp;基本原理是通过将 FLV 文件流转码复用成 ISO BMFF（MP4 碎片）片段，然后通过 Media Source Extensions（API） 将 MP4 片段喂进浏览器。它是前<code>bilibili</code>的员工受到<code>hls.js</code>的启发而创作的一个开源项目，<a href="https://github.com/Bilibili/flv.js" target="_blank" rel="noopener">github入口请点击这里</a>！</p>
+<p>&emsp;&emsp;本文将顺序介绍<code>flv.js</code>的功能、优点、缺点，并在最后给出一个使用<code>flv.js</code>的实例。</p>
+<h2 id="flv-js的功能"><a href="#flv-js的功能" class="headerlink" title="flv.js的功能"></a><code>flv.js</code>的功能</h2><p>&emsp;&emsp;目前各大浏览器厂商已经默认禁用 Flash，以前常见的Flash直播方案需要用户同意使用Flash后才可以正常使用直播功能，这样的用户体验很致命。<br>&emsp;&emsp;而<code>flv.js</code>则可以在不使用 Flash 的情况下播放FLV流视频。下面列出了它的几点功能：</p>
+<ul>
+<li>它是一个具有<code>H.264 + AAC</code>编码器播放功能的FLV 容器</li>
+<li>多部分分段视频播放</li>
+<li>HTTP FLV 低延迟实时流播放</li>
+<li>FLV 通过 WebSocket 实时流播放</li>
+<li>兼容 Chrome, FireFox, Safari 10, IE11 和 Edge</li>
+<li>开销很低，使用了浏览器的硬件加速</li>
+</ul>
+<h2 id="flv-js的优点"><a href="#flv-js的优点" class="headerlink" title="flv.js的优点"></a><code>flv.js</code>的优点</h2><ul>
+<li>HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在HTML5上播放FLV格式视频</li>
+<li>建立在采用了硬件加速的Video标签上，因此性能好，支持高清</li>
+<li>在 HTML5 上支持了延迟极低的 HTTP FLV 播放，解决了对<code>Flash</code>的依赖问题</li>
+<li>支持<code>录播</code>和<code>直播</code></li>
+</ul>
+<h2 id="flv-js的缺点"><a href="#flv-js的缺点" class="headerlink" title="flv.js的缺点"></a><code>flv.js</code>的缺点</h2><ul>
+<li>FLV里所包含的视频编码必须是H.264，音频编码必须是AAC或MP3， IE11和Edge浏览器不支持MP3音频编码，所以FLV里采用的编码最好是H.264+AAC。</li>
+<li>在录播上依赖于原生 HTML5 的Video标签和Media Source Extensions API。</li>
+<li>在直播上不仅依赖于原生 HTML5 的Video标签和Media Source Extensions  API，同时依赖 HTTP-FLV 或者 WebSocket 中的一种协议来传输FLV。其中 HTTP FLV 需通过流式IO去拉取数据，比如fetch或者stream。</li>
+<li>flv.min.js 文件gzip压缩后与flash播放器gzip压缩后的大小相差无几。</li>
+<li>由于依赖Media Source Extensions  API，目前所有iOS和Android4.4.4以下里的浏览器都不支持，也就是说目前对于移动端flv.js基本是不能用的。</li>
+</ul>
+<h2 id="使用实例"><a href="#使用实例" class="headerlink" title="使用实例"></a>使用实例</h2><p>&emsp;&emsp;使用<code>flv.js</code>的一个具体例子可以点击  <a href="http://alonesuperman.com/show/flv/demo/" target="_blank" rel="noopener">这里</a> !<br>&emsp;&emsp;在 Google Chrome    59.0.3071.115 (正式版本) （32 位）中的效果图如下：</p>
+<p><img src="/2017/07/17/flvjs/1.png" alt="chrome 下的效果图"></p>
+<p>&emsp;&emsp;而在 Android 6.0.1 的小米4手机的浏览器上是无法使用的。如下图：</p>
+<p><img src="/2017/07/17/flvjs/2.png" alt="Android 6.0.1 小米4下浏览器的效果图"></p>
+<p>&emsp;&emsp;另外，其在 iOS 上的 Safari 浏览器下也是无法使用的。</p>
+<h4 id="综上，flv-js在移动端上的使用还是比较局限的。"><a href="#综上，flv-js在移动端上的使用还是比较局限的。" class="headerlink" title="综上，flv.js在移动端上的使用还是比较局限的。"></a>综上，<code>flv.js</code>在移动端上的使用还是比较局限的。</h4>
+        </div>
+        <footer class="article-footer">
+            
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="uyan_frame"></div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/whbxyr" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/07/17/judgeAsyncJs/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            动态加载js脚本并判断是否加载完成
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/07/10/jsStack/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">使用 js 实现栈并解决正整数&quot;进制转换&quot;的问题</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/08/27/location/" class="title">window.location 对象详解</a></p>
+                            <p class="item-date"><time datetime="2017-08-27T04:17:16.000Z" itemprop="datePublished">2017-08-27</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/07/22/semantic/" class="title">理解语义化</a></p>
+                            <p class="item-date"><time datetime="2017-07-22T11:17:16.000Z" itemprop="datePublished">2017-07-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/07/17/judgeAsyncJs/" class="title">动态加载js脚本并判断是否加载完成</a></p>
+                            <p class="item-date"><time datetime="2017-07-17T11:17:16.000Z" itemprop="datePublished">2017-07-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/07/17/flvjs/" class="title">调研 flv.js</a></p>
+                            <p class="item-date"><time datetime="2017-07-17T07:17:16.000Z" itemprop="datePublished">2017-07-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/07/10/jsStack/" class="title">使用 js 实现栈并解决正整数&quot;进制转换&quot;的问题</a></p>
+                            <p class="item-date"><time datetime="2017-07-09T16:18:27.000Z" itemprop="datePublished">2017-07-10</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-linux/">技术类-linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-前端/">技术类-前端</a><span class="category-list-count">19</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-奇淫巧技/">技术类-奇淫巧技</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-算法/">技术类-算法</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-网络协议/">技术类-网络协议</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/文学类/">文学类</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/DOM/" style="font-size: 15px;">DOM</a> <a href="/tags/JavaScript/" style="font-size: 20px;">JavaScript</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/html/" style="font-size: 17.5px;">html</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/奇淫巧技/" style="font-size: 15px;">奇淫巧技</a> <a href="/tags/插件/" style="font-size: 12.5px;">插件</a> <a href="/tags/文学/" style="font-size: 10px;">文学</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/算法/" style="font-size: 12.5px;">算法</a> <a href="/tags/网络协议/" style="font-size: 10px;">网络协议</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.curiooosity.com/">黄一帆的博客</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://simolin.cn/">林俊杰的博客</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 许源锐</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2131557"></script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

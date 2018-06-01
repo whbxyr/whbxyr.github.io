@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>使用 js 实现栈并解决正整数&quot;进制转换&quot;的问题 | 肥锐&#39;s 技术栈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="JavaScript,算法" />
+    
+    <meta name="description" content="&amp;emsp;&amp;emsp;在这篇文章中，我将结合 js 的构造函数以及 js 的数组，实现数据结构栈并利用 js 实现的栈来实现正整数的 进制转换算法，即将正整数转换为其他进制的数（包括二进制到十六进制）。 (一) 利用 js 实现数据结构栈&amp;emsp;&amp;emsp;充分利用 ECMAScript 原生的构造函数以及原生的数据结构数组，可以很容易地实现栈。代码以及注释如下：12345678910111">
+<meta name="keywords" content="JavaScript,算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 js 实现栈并解决正整数&quot;进制转换&quot;的问题">
+<meta property="og:url" content="http://www.whbxyr.cn/2017/07/10/jsStack/index.html">
+<meta property="og:site_name" content="肥锐&#39;s 技术栈">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;在这篇文章中，我将结合 js 的构造函数以及 js 的数组，实现数据结构栈并利用 js 实现的栈来实现正整数的 进制转换算法，即将正整数转换为其他进制的数（包括二进制到十六进制）。 (一) 利用 js 实现数据结构栈&amp;emsp;&amp;emsp;充分利用 ECMAScript 原生的构造函数以及原生的数据结构数组，可以很容易地实现栈。代码以及注释如下：12345678910111">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-01T15:16:53.575Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用 js 实现栈并解决正整数&quot;进制转换&quot;的问题">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;在这篇文章中，我将结合 js 的构造函数以及 js 的数组，实现数据结构栈并利用 js 实现的栈来实现正整数的 进制转换算法，即将正整数转换为其他进制的数（包括二进制到十六进制）。 (一) 利用 js 实现数据结构栈&amp;emsp;&amp;emsp;充分利用 ECMAScript 原生的构造函数以及原生的数据结构数组，可以很容易地实现栈。代码以及注释如下：12345678910111">
+    
+
+    
+        <link rel="alternate" href="/" title="肥锐&#39;s 技术栈" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">我只是刚好有一些想法以及一台电脑。  ——阿肥锐</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">index.主页</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/archives/">index.归档</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/categories/文学类/">index.文学</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/contact/">index.联系</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/技术类-前端/">技术类-前端</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-jsStack" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        使用 js 实现栈并解决正整数&quot;进制转换&quot;的问题
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/07/10/jsStack/" class="article-date">
+            <time datetime="2017-07-09T16:18:27.000Z" itemprop="datePublished">2017-07-10</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>, <a class="tag-link" href="/tags/算法/">算法</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>&emsp;&emsp;在这篇文章中，我将结合 js 的构造函数以及 js 的数组，实现数据结构<code>栈</code>并利用 js 实现的栈来实现正整数的 <code>进制转换</code>算法，即将正整数转换为其他进制的数（包括二进制到十六进制）。</p>
+<h2 id="一-利用-js-实现数据结构栈"><a href="#一-利用-js-实现数据结构栈" class="headerlink" title="(一) 利用 js 实现数据结构栈"></a><font style="color: #f00;">(一) 利用 js 实现数据结构<code>栈</code></font></h2><p>&emsp;&emsp;充分利用 ECMAScript 原生的<code>构造函数</code>以及原生的数据结构<code>数组</code>，可以很容易地实现栈。代码以及注释如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 初始化栈</span></span><br><span class="line">	<span class="keyword">var</span> items = [];</span><br><span class="line">	<span class="comment">// 入栈</span></span><br><span class="line">	<span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">		items.push(item);</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">// 出栈</span></span><br><span class="line">	<span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> items.pop();</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">// 获取栈顶元素</span></span><br><span class="line">	<span class="keyword">this</span>.peek = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> items[items.length - <span class="number">1</span>];</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">// 判空</span></span><br><span class="line">	<span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> items.length === <span class="number">0</span>;</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">// 获取栈的大小</span></span><br><span class="line">	<span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> items.length;</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">// 清空栈</span></span><br><span class="line">	<span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		items = [];</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">// 打印栈</span></span><br><span class="line">	<span class="keyword">this</span>.print = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(items.toString());</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="二-利用栈将正整数转换为其他进制数（2-16）"><a href="#二-利用栈将正整数转换为其他进制数（2-16）" class="headerlink" title="(二) 利用栈将正整数转换为其他进制数（2~16）"></a><font style="color: #f00;">(二) 利用栈将正整数转换为其他进制数（2~16）</font></h2><p>&emsp;&emsp;只要知道十进制数转换为其他进制数的原理，就可以很简单地利用栈来实现。原理就是通过不断地进行除法，将余数放入栈中，等到原来的十进制数变为零时，再将栈中的数据逐个出站拼接，便能获得我们想要的目标进制数。代码以及注释如下所示：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 十进制正整数： decNumber</span></span><br><span class="line"><span class="comment"> * 目标进制(base &gt;= 2 &amp;&amp; base &lt;= 16)： base</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">baseConvert</span>(<span class="params">decNumber, base</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// 初始化余数栈</span></span><br><span class="line">	<span class="keyword">var</span> remStack = <span class="keyword">new</span> Stack();</span><br><span class="line">	<span class="comment">// 初始化余数</span></span><br><span class="line">	<span class="keyword">var</span> rem;</span><br><span class="line">	<span class="comment">// 初始化转换结果</span></span><br><span class="line">	<span class="keyword">var</span> baseString = <span class="string">''</span>;</span><br><span class="line">	<span class="comment">// 解决11到16进制之间的进制数表示问题</span></span><br><span class="line">	<span class="keyword">var</span> digits = <span class="string">'0123456789ABCDEF'</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 计算余数栈</span></span><br><span class="line">	<span class="keyword">while</span> (decNumber &gt; <span class="number">0</span>) &#123;</span><br><span class="line">		rem = decNumber % base;</span><br><span class="line">		remStack.push(rem);</span><br><span class="line">		decNumber = <span class="built_in">Math</span>.floor(decNumber / base);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 计算结果</span></span><br><span class="line">	<span class="keyword">while</span> (!remStack.isEmpty()) &#123;</span><br><span class="line">		baseString += digits[remStack.pop()];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> baseString;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;另外，只要知道如何将十进制正整数转换为其他进制的数，那么也可以轻松实现任何进制之间的转换。在我看来，分为两个步骤：<br>&emsp;&emsp;<strong>1.</strong> 将原始进制数a转换为十进制数b<br>&emsp;&emsp;<strong>2.</strong> 将得到的b再利用上述算法，即可得到最终的目标进制数c</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="uyan_frame"></div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/whbxyr" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/07/17/flvjs/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            调研 flv.js
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/05/31/path-join-path-resolve/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">path.join 与 path.resolve 的区别</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/08/27/location/" class="title">window.location 对象详解</a></p>
+                            <p class="item-date"><time datetime="2017-08-27T04:17:16.000Z" itemprop="datePublished">2017-08-27</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/07/22/semantic/" class="title">理解语义化</a></p>
+                            <p class="item-date"><time datetime="2017-07-22T11:17:16.000Z" itemprop="datePublished">2017-07-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/07/17/judgeAsyncJs/" class="title">动态加载js脚本并判断是否加载完成</a></p>
+                            <p class="item-date"><time datetime="2017-07-17T11:17:16.000Z" itemprop="datePublished">2017-07-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/07/17/flvjs/" class="title">调研 flv.js</a></p>
+                            <p class="item-date"><time datetime="2017-07-17T07:17:16.000Z" itemprop="datePublished">2017-07-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a></p>
+                            <p class="item-title"><a href="/2017/07/10/jsStack/" class="title">使用 js 实现栈并解决正整数&quot;进制转换&quot;的问题</a></p>
+                            <p class="item-date"><time datetime="2017-07-09T16:18:27.000Z" itemprop="datePublished">2017-07-10</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-linux/">技术类-linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-前端/">技术类-前端</a><span class="category-list-count">19</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-奇淫巧技/">技术类-奇淫巧技</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-算法/">技术类-算法</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术类-网络协议/">技术类-网络协议</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/文学类/">文学类</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/DOM/" style="font-size: 15px;">DOM</a> <a href="/tags/JavaScript/" style="font-size: 20px;">JavaScript</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/html/" style="font-size: 17.5px;">html</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/奇淫巧技/" style="font-size: 15px;">奇淫巧技</a> <a href="/tags/插件/" style="font-size: 12.5px;">插件</a> <a href="/tags/文学/" style="font-size: 10px;">文学</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/算法/" style="font-size: 12.5px;">算法</a> <a href="/tags/网络协议/" style="font-size: 10px;">网络协议</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.curiooosity.com/">黄一帆的博客</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://simolin.cn/">林俊杰的博客</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 许源锐</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2131557"></script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

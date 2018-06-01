@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2015/07/18/whatUniversity/</loc>
+    <lastmod>2018-06-01T15:16:53.607Z</lastmod>
+    <data>
+        <display>
+        <title>《读大学，究竟读什么？》（覃彪喜）读后感</title>
+        <pubTime>2015-07-18T08:55:02.000Z</pubTime>
+        
+        <tag>文学</tag>
+         
+         
+           
+             
+              <breadCrumb title="文学类" url="http://www.whbxyr.cn/categories/%E6%96%87%E5%AD%A6%E7%B1%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/13/ubuntuVpn/</loc>
+    <lastmod>2018-06-01T15:16:53.591Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu下配置 Cisco VPN 的方法</title>
+        <pubTime>2017-04-13T06:12:31.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>奇淫巧技</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-linux" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/13/ubuntuTip/</loc>
+    <lastmod>2018-06-01T15:16:53.591Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu下各种出错情况的解决方法</title>
+        <pubTime>2017-04-13T05:51:05.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>奇淫巧技</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-linux" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/10/04/tinymce-MySQL/</loc>
+    <lastmod>2018-06-01T15:16:53.591Z</lastmod>
+    <data>
+        <display>
+        <title>利用tinymce编写网页文章并插入到MySQL数据库</title>
+        <pubTime>2016-10-04T10:23:22.000Z</pubTime>
+        
+        <tag>插件</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/04/02/sortAlgorithm/</loc>
+    <lastmod>2018-06-01T15:16:53.591Z</lastmod>
+    <data>
+        <display>
+        <title>排序算法总结</title>
+        <pubTime>2016-04-02T05:19:03.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-算法" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/07/22/semantic/</loc>
+    <lastmod>2018-06-01T15:16:53.591Z</lastmod>
+    <data>
+        <display>
+        <title>理解语义化</title>
+        <pubTime>2017-07-22T11:17:16.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/07/10/jsStack/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>使用 js 实现栈并解决正整数"进制转换"的问题</title>
+        <pubTime>2017-07-09T16:18:27.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/05/31/path-join-path-resolve/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>path.join 与 path.resolve 的区别</title>
+        <pubTime>2017-05-31T13:07:48.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/08/27/location/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>window.location 对象详解</title>
+        <pubTime>2017-08-27T04:17:16.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/04/hexoCname/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>为hexo博客添加独立域名</title>
+        <pubTime>2017-04-04T05:07:04.000Z</pubTime>
+        
+        <tag>奇淫巧技</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-奇淫巧技" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/04/15/iframe/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>iframe的优缺点</title>
+        <pubTime>2016-04-15T13:00:59.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/12/26/letncst/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>es6(一) 之 let 和 const 命令</title>
+        <pubTime>2016-12-26T06:27:31.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>es6</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2015/03/16/json/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>详解 JSON 以及 JSON 在JS中的使用</title>
+        <pubTime>2015-03-16T08:03:50.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/07/17/judgeAsyncJs/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>动态加载js脚本并判断是否加载完成</title>
+        <pubTime>2017-07-17T11:17:16.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/03/aptRemove/</loc>
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下彻底卸载软件的方法</title>
+        <pubTime>2017-04-03T10:14:15.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-linux" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/04/24/event/</loc>
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    <data>
+        <display>
+        <title>事件流概述</title>
+        <pubTime>2016-04-24T09:38:56.000Z</pubTime>
+        
+        <tag>DOM</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/04/22/clearFloat/</loc>
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    <data>
+        <display>
+        <title>清除子元素浮动造成的影响</title>
+        <pubTime>2016-04-22T02:21:34.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/15/browserCore/</loc>
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    <data>
+        <display>
+        <title>各大浏览器内核(渲染引擎/JS引擎)</title>
+        <pubTime>2017-04-15T07:17:16.000Z</pubTime>
+        
+        <tag>浏览器</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/04/28/asyncJs/</loc>
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    <data>
+        <display>
+        <title>异步加载 javascript 文件的方法总结</title>
+        <pubTime>2016-04-28T14:36:51.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/07/17/flvjs/</loc>
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    <data>
+        <display>
+        <title>调研 flv.js</title>
+        <pubTime>2017-07-17T07:17:16.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>插件</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2015/04/18/ajax/</loc>
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    <data>
+        <display>
+        <title>ajax 的兼容使用方法</title>
+        <pubTime>2015-04-18T05:45:07.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>ajax</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/14/HTTPprotocol/</loc>
+    <lastmod>2018-06-01T15:16:53.544Z</lastmod>
+    <data>
+        <display>
+        <title>详解应用层协议之 HTTP 协议</title>
+        <pubTime>2017-04-14T04:17:11.000Z</pubTime>
+        
+        <tag>网络协议</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-网络协议" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/06/24/EventUtil/</loc>
+    <lastmod>2018-06-01T15:16:53.544Z</lastmod>
+    <data>
+        <display>
+        <title>兼容浏览器的事件处理程序 EventUtil</title>
+        <pubTime>2016-06-24T10:06:56.000Z</pubTime>
+        
+        <tag>DOM</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/09/EventLoopUp/</loc>
+    <lastmod>2018-06-01T15:16:53.529Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript事件循环机制高级篇</title>
+        <pubTime>2017-04-09T11:33:07.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/09/EventLoop/</loc>
+    <lastmod>2018-06-01T15:16:53.513Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript事件循环机制入门篇</title>
+        <pubTime>2017-04-09T05:20:09.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/04/20/DOM/</loc>
+    <lastmod>2018-06-01T15:16:53.513Z</lastmod>
+    <data>
+        <display>
+        <title>DOM详解</title>
+        <pubTime>2016-04-20T12:32:42.000Z</pubTime>
+        
+        <tag>DOM</tag>
+         
+        <tag>html</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+</urlset>
