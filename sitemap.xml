@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.whbxyr.cn/2018/10/20/vue-cli/</loc>
+    
+    <lastmod>2018-10-21T03:39:20.456Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.whbxyr.cn/contact/index.html</loc>
     
     <lastmod>2018-06-01T15:16:53.607Z</lastmod>
@@ -51,27 +58,6 @@
   </url>
   
   <url>
-    <loc>http://www.whbxyr.cn/2016/12/26/letncst/</loc>
-    
-    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.whbxyr.cn/2015/03/16/json/</loc>
-    
-    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.whbxyr.cn/2017/05/31/path-join-path-resolve/</loc>
-    
-    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.whbxyr.cn/2017/07/17/judgeAsyncJs/</loc>
     
     <lastmod>2018-06-01T15:16:53.575Z</lastmod>
@@ -100,7 +86,35 @@
   </url>
   
   <url>
+    <loc>http://www.whbxyr.cn/2016/12/26/letncst/</loc>
+    
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.whbxyr.cn/2015/03/16/json/</loc>
+    
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.whbxyr.cn/2017/05/31/path-join-path-resolve/</loc>
+    
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.whbxyr.cn/2015/04/18/ajax/</loc>
+    
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.whbxyr.cn/2016/04/28/asyncJs/</loc>
     
     <lastmod>2018-06-01T15:16:53.560Z</lastmod>
     
@@ -128,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://www.whbxyr.cn/2016/04/28/asyncJs/</loc>
-    
-    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.whbxyr.cn/2016/04/24/event/</loc>
     
     <lastmod>2018-06-01T15:16:53.560Z</lastmod>
@@ -149,14 +156,14 @@
   </url>
   
   <url>
-    <loc>http://www.whbxyr.cn/2017/04/14/HTTPprotocol/</loc>
+    <loc>http://www.whbxyr.cn/2016/06/24/EventUtil/</loc>
     
     <lastmod>2018-06-01T15:16:53.544Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.whbxyr.cn/2016/06/24/EventUtil/</loc>
+    <loc>http://www.whbxyr.cn/2017/04/14/HTTPprotocol/</loc>
     
     <lastmod>2018-06-01T15:16:53.544Z</lastmod>
     
@@ -170,14 +177,14 @@
   </url>
   
   <url>
-    <loc>http://www.whbxyr.cn/2016/04/20/DOM/</loc>
+    <loc>http://www.whbxyr.cn/2017/04/09/EventLoop/</loc>
     
     <lastmod>2018-06-01T15:16:53.513Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.whbxyr.cn/2017/04/09/EventLoop/</loc>
+    <loc>http://www.whbxyr.cn/2016/04/20/DOM/</loc>
     
     <lastmod>2018-06-01T15:16:53.513Z</lastmod>
     

@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>http://www.whbxyr.cn/2018/10/20/vue-cli/</loc>
+    <lastmod>2018-10-21T03:39:20.456Z</lastmod>
+    <data>
+        <display>
+        <title>vue 脚手架之 vue-cli 的使用</title>
+        <pubTime>2018-10-20T14:58:29.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>脚手架</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.whbxyr.cn/2015/07/18/whatUniversity/</loc>
@@ -129,70 +151,6 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2016/12/26/letncst/</loc>
-    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
-    <data>
-        <display>
-        <title>es6(一) 之 let 和 const 命令</title>
-        <pubTime>2016-12-26T06:27:31.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.whbxyr.cn/2015/03/16/json/</loc>
-    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
-    <data>
-        <display>
-        <title>详解 JSON 以及 JSON 在JS中的使用</title>
-        <pubTime>2015-03-16T08:03:50.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.whbxyr.cn/2017/05/31/path-join-path-resolve/</loc>
-    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
-    <data>
-        <display>
-        <title>path.join 与 path.resolve 的区别</title>
-        <pubTime>2017-05-31T13:07:48.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-        <tag>node</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.whbxyr.cn/2017/07/17/judgeAsyncJs/</loc>
     <lastmod>2018-06-01T15:16:53.575Z</lastmod>
     <data>
@@ -275,6 +233,70 @@
 
     
   <url>
+    <loc>http://www.whbxyr.cn/2016/12/26/letncst/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>es6(一) 之 let 和 const 命令</title>
+        <pubTime>2016-12-26T06:27:31.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>es6</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2015/03/16/json/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>详解 JSON 以及 JSON 在JS中的使用</title>
+        <pubTime>2015-03-16T08:03:50.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/05/31/path-join-path-resolve/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>path.join 与 path.resolve 的区别</title>
+        <pubTime>2017-05-31T13:07:48.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.whbxyr.cn/2015/04/18/ajax/</loc>
     <lastmod>2018-06-01T15:16:53.560Z</lastmod>
     <data>
@@ -285,6 +307,26 @@
         <tag>JavaScript</tag>
          
         <tag>ajax</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2016/04/28/asyncJs/</loc>
+    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
+    <data>
+        <display>
+        <title>异步加载 javascript 文件的方法总结</title>
+        <pubTime>2016-04-28T14:36:51.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
          
          
            
@@ -361,26 +403,6 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2016/04/28/asyncJs/</loc>
-    <lastmod>2018-06-01T15:16:53.560Z</lastmod>
-    <data>
-        <display>
-        <title>异步加载 javascript 文件的方法总结</title>
-        <pubTime>2016-04-28T14:36:51.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.whbxyr.cn/2016/04/24/event/</loc>
     <lastmod>2018-06-01T15:16:53.560Z</lastmod>
     <data>
@@ -423,26 +445,6 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2017/04/14/HTTPprotocol/</loc>
-    <lastmod>2018-06-01T15:16:53.544Z</lastmod>
-    <data>
-        <display>
-        <title>详解应用层协议之 HTTP 协议</title>
-        <pubTime>2017-04-14T04:17:11.000Z</pubTime>
-        
-        <tag>网络协议</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术类-网络协议" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.whbxyr.cn/2016/06/24/EventUtil/</loc>
     <lastmod>2018-06-01T15:16:53.544Z</lastmod>
     <data>
@@ -458,6 +460,26 @@
            
              
               <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/04/14/HTTPprotocol/</loc>
+    <lastmod>2018-06-01T15:16:53.544Z</lastmod>
+    <data>
+        <display>
+        <title>详解应用层协议之 HTTP 协议</title>
+        <pubTime>2017-04-14T04:17:11.000Z</pubTime>
+        
+        <tag>网络协议</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-网络协议" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
           
         </display>
     </data>
@@ -485,18 +507,14 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2016/04/20/DOM/</loc>
+    <loc>http://www.whbxyr.cn/2017/04/09/EventLoop/</loc>
     <lastmod>2018-06-01T15:16:53.513Z</lastmod>
     <data>
         <display>
-        <title>DOM详解</title>
-        <pubTime>2016-04-20T12:32:42.000Z</pubTime>
+        <title>JavaScript事件循环机制入门篇</title>
+        <pubTime>2017-04-09T05:20:09.000Z</pubTime>
         
         <tag>JavaScript</tag>
-         
-        <tag>DOM</tag>
-         
-        <tag>html</tag>
          
          
            
@@ -509,14 +527,18 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2017/04/09/EventLoop/</loc>
+    <loc>http://www.whbxyr.cn/2016/04/20/DOM/</loc>
     <lastmod>2018-06-01T15:16:53.513Z</lastmod>
     <data>
         <display>
-        <title>JavaScript事件循环机制入门篇</title>
-        <pubTime>2017-04-09T05:20:09.000Z</pubTime>
+        <title>DOM详解</title>
+        <pubTime>2016-04-20T12:32:42.000Z</pubTime>
         
         <tag>JavaScript</tag>
+         
+        <tag>DOM</tag>
+         
+        <tag>html</tag>
          
          
            
