@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.whbxyr.cn/2018/11/04/new/</loc>
+    <lastmod>2018-11-04T07:21:13.628Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript 中 new 操作符的执行顺序</title>
+        <pubTime>2018-11-04T04:24:18.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.whbxyr.cn/2018/10/24/mouseWithoutBorders/</loc>
     <lastmod>2018-10-26T17:11:36.476Z</lastmod>
     <data>
@@ -89,19 +109,19 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2017/07/22/semantic/</loc>
+    <loc>http://www.whbxyr.cn/2016/04/02/sortAlgorithm/</loc>
     <lastmod>2018-06-01T15:16:53.591Z</lastmod>
     <data>
         <display>
-        <title>理解语义化</title>
-        <pubTime>2017-07-22T11:17:16.000Z</pubTime>
+        <title>排序算法总结</title>
+        <pubTime>2016-04-02T05:19:03.000Z</pubTime>
         
-        <tag>html</tag>
+        <tag>算法</tag>
          
          
            
              
-              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+              <breadCrumb title="技术类-算法" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E7%AE%97%E6%B3%95/"/>
           
         </display>
     </data>
@@ -173,34 +193,14 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2016/04/02/sortAlgorithm/</loc>
+    <loc>http://www.whbxyr.cn/2017/07/22/semantic/</loc>
     <lastmod>2018-06-01T15:16:53.591Z</lastmod>
     <data>
         <display>
-        <title>排序算法总结</title>
-        <pubTime>2016-04-02T05:19:03.000Z</pubTime>
+        <title>理解语义化</title>
+        <pubTime>2017-07-22T11:17:16.000Z</pubTime>
         
-        <tag>算法</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术类-算法" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E7%AE%97%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.whbxyr.cn/2017/07/17/judgeAsyncJs/</loc>
-    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
-    <data>
-        <display>
-        <title>动态加载js脚本并判断是否加载完成</title>
-        <pubTime>2017-07-17T11:17:16.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
+        <tag>html</tag>
          
          
            
@@ -285,6 +285,26 @@
         <tag>JavaScript</tag>
          
         <tag>es6</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术类-前端" url="http://www.whbxyr.cn/categories/%E6%8A%80%E6%9C%AF%E7%B1%BB-%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.whbxyr.cn/2017/07/17/judgeAsyncJs/</loc>
+    <lastmod>2018-06-01T15:16:53.575Z</lastmod>
+    <data>
+        <display>
+        <title>动态加载js脚本并判断是否加载完成</title>
+        <pubTime>2017-07-17T11:17:16.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
          
          
            
@@ -425,14 +445,16 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2016/04/28/asyncJs/</loc>
+    <loc>http://www.whbxyr.cn/2016/04/24/event/</loc>
     <lastmod>2018-06-01T15:16:53.560Z</lastmod>
     <data>
         <display>
-        <title>异步加载 javascript 文件的方法总结</title>
-        <pubTime>2016-04-28T14:36:51.000Z</pubTime>
+        <title>事件流概述</title>
+        <pubTime>2016-04-24T09:38:56.000Z</pubTime>
         
         <tag>JavaScript</tag>
+         
+        <tag>DOM</tag>
          
          
            
@@ -445,16 +467,14 @@
 
     
   <url>
-    <loc>http://www.whbxyr.cn/2016/04/24/event/</loc>
+    <loc>http://www.whbxyr.cn/2016/04/28/asyncJs/</loc>
     <lastmod>2018-06-01T15:16:53.560Z</lastmod>
     <data>
         <display>
-        <title>事件流概述</title>
-        <pubTime>2016-04-24T09:38:56.000Z</pubTime>
+        <title>异步加载 javascript 文件的方法总结</title>
+        <pubTime>2016-04-28T14:36:51.000Z</pubTime>
         
         <tag>JavaScript</tag>
-         
-        <tag>DOM</tag>
          
          
            

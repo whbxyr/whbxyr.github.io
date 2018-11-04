@@ -3,19 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>分类：: 技术类-前端 | 肥锐&#39;s 技术栈</title>
+    <title>JavaScript 中 new 操作符的执行顺序 | 肥锐&#39;s 技术栈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="我不是程序员，也不是设计师，只是刚好有些想法以及一台电脑">
-<meta property="og:type" content="website">
-<meta property="og:title" content="肥锐&#39;s 技术栈">
-<meta property="og:url" content="http://www.whbxyr.cn/categories/技术类-前端/index.html">
+        <meta name="keywords" content="JavaScript" />
+    
+    <meta name="description" content="&amp;emsp;&amp;emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。 new 操作符做了什么？？？&amp;emsp;&amp;emsp;用 new 调用构造函数时 new 的操作顺序：  （一）创建一个新对象 X； （二）将新对象 X 的属性 proto 指向构造函数的 prototype 指">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript 中 new 操作符的执行顺序">
+<meta property="og:url" content="http://www.whbxyr.cn/2018/11/04/new/index.html">
 <meta property="og:site_name" content="肥锐&#39;s 技术栈">
-<meta property="og:description" content="我不是程序员，也不是设计师，只是刚好有些想法以及一台电脑">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。 new 操作符做了什么？？？&amp;emsp;&amp;emsp;用 new 调用构造函数时 new 的操作顺序：  （一）创建一个新对象 X； （二）将新对象 X 的属性 proto 指向构造函数的 prototype 指">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-04T07:21:13.628Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="肥锐&#39;s 技术栈">
-<meta name="twitter:description" content="我不是程序员，也不是设计师，只是刚好有些想法以及一台电脑">
+<meta name="twitter:title" content="JavaScript 中 new 操作符的执行顺序">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。 new 操作符做了什么？？？&amp;emsp;&amp;emsp;用 new 调用构造函数时 new 的操作顺序：  （一）创建一个新对象 X； （二）将新对象 X 的属性 proto 指向构造函数的 prototype 指">
     
 
     
@@ -135,290 +139,106 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-folder-open"></i>分类：: <em class="page-title-link">技术类-前端</em>
+    <a class="page-title-link" href="/categories/技术类-前端/">技术类-前端</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-new" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2018" class="archive-year"><i class="icon fa fa-calendar-o"></i>2018</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a>
-            </div>
-            <div class="date"><time datetime="2018-11-04T04:24:18.000Z" itemprop="datePublished">2018-11-04</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/11/04/new/">JavaScript 中 new 操作符的执行顺序</a>
+        JavaScript 中 new 操作符的执行顺序
         </h1>
     
 
-        <p class="article-excerpt">
-            &emsp;&emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。
-new 操作符做了什么？？？&emsp;&emsp;用 new 调用构造函数时 new 的操作顺序：
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/11/04/new/" class="article-date">
+            <time datetime="2018-11-04T04:24:18.000Z" itemprop="datePublished">2018-11-04</time>
+        </a>
+    </div>
 
-（一）创建一个新对象 X；
-（二）将新对象 X 的属性 proto 指向构造函数的 prototype 指
-        </p>
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>&emsp;&emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。</p>
+<h2 id="new-操作符做了什么？？？"><a href="#new-操作符做了什么？？？" class="headerlink" title="new 操作符做了什么？？？"></a><font style="color: #f00;">new 操作符做了什么？？？</font></h2><p>&emsp;&emsp;用 new 调用构造函数时 new 的操作顺序：</p>
+<ul>
+<li>（一）创建一个新对象 X；</li>
+<li>（二）将新对象 X 的属性 <strong>proto</strong> 指向构造函数的 prototype 指向的地方；</li>
+<li>（三）将构造函数中的 this 绑定为新对象 X；</li>
+<li>（四）执行构造函数中的代码，比如 this.a = ‘xx’ 等等；</li>
+<li>（五）判断构造函数中是否有 return 语句，没有的话就返回新对象 X，有的话先判断 return 后面的值是否为引用类型，是引用类型的话就返回该值，否则依然返回新对象 X。</li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a><font style="color: #f00;">注意</font></h2><p>&emsp;&emsp;（一）对于构造函数，如果没有通过 new 去调用，那么实际该函数返回什么由函数中 return 的具体值决定，即有 return 语句的话 return 什么就返回什么，没有 return 语句的话就返回 undefined；</p>
+<p>&emsp;&emsp;（二）但是如果用 new 去调用构造函数，如果没有 return 语句，那就返回由 new 创建的那个对象，有 return 语句的话，先判断 return 后面的是不是引用类型的指，如果是引用类型的值，就返回该值，否则依然返回由 new 创建的那个对象。</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+
+        </footer>
     </div>
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a>
-            </div>
-            <div class="date"><time datetime="2018-10-20T14:58:29.000Z" itemprop="datePublished">2018-10-20</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/10/20/vue-cli/">vue 脚手架之 vue-cli 的使用</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            &emsp;&emsp;vue 的发展是很快的，围绕 vue 已经有了一个完整的应用生态，比如 vue + vuex + vue-router + axios + webpack 就是一个完整的应用系统了。那么，每次我们要新建一个运用了此应用系统的项目的时候，都要重新搭建项目吗？回答是肯定的，也确实很麻烦，但是 vue-cli 作为一个 vue 的专门脚手架，可以轻松帮我们解决这样的问题。
-&em
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
+    <section id="comments">
     
         
-            </div></section>
-        
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a>
-            </div>
-            <div class="date"><time datetime="2017-08-27T04:17:16.000Z" itemprop="datePublished">2017-08-27</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/08/27/location/">window.location 对象详解</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            window.location 的属性&emsp;&emsp;本文通过一个示例 url，讲述window.location的各个属性。假设该url如下：1https://www.baidu.com/s?wd=location.hash&amp;rsv_spt=1&amp;rsv_iqid=0xa78ca3100003b820&amp;issp=1&amp;f=8&amp;rsv_bp=1&amp;
-        </p>
-    </div>
-</article>
-    
+    <div id="uyan_frame"></div>
 
     
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a>
-            </div>
-            <div class="date"><time datetime="2017-07-22T11:17:16.000Z" itemprop="datePublished">2017-07-22</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/07/22/semantic/">理解语义化</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            &emsp;&emsp;以前开始学前端、作为一名萌新的时候，一上来就是狂刷 html 的各种标签，拿到 &lt;div&gt; &lt;span&gt; 就是学习如何实现各种炫酷效果，很多实现都基本会首选这两个标签，但是却基本不考虑语义化这种看似“很玄”的东西，但是随着自己接触的项目逐渐增多以及现 HTML 5 的流行，慢慢发现如果有更高追求的话，语义化就是一个不得不考虑的点。
-语义化的定义&em
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a>
-            </div>
-            <div class="date"><time datetime="2017-07-17T11:17:16.000Z" itemprop="datePublished">2017-07-17</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/07/17/judgeAsyncJs/">动态加载js脚本并判断是否加载完成</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            &emsp;&emsp;异步加载js的方法可以是先创建一个&lt;script&gt;标签，再给这个标签添加src属性并将该元素添加到文档后，这时候浏览器就会开始异步加载JavaScript文件。它与图像不同的是，为图像创建的&lt;img&gt;标签，一旦给予了它src属性，它就会立马加载图片，而不管&lt;img&gt;标签是否已经被插入文档中。
-&emsp;&emsp;因此，对于&lt;sc
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a>
-            </div>
-            <div class="date"><time datetime="2017-07-17T07:17:16.000Z" itemprop="datePublished">2017-07-17</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/07/17/flvjs/">调研 flv.js</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            前言&emsp;&emsp;目前常见的直播协议及其简单介绍如下：
-
-RTMP: 底层基于TCP，在浏览器端依赖Flash。
-HTTP-FLV: 基于HTTP流式IO传输FLV，依赖浏览器支持播放FLV。
-WebSocket-FLV: 基于WebSocket传输FLV，依赖浏览器支持播放FLV。WebSocket建立在HTTP之上，建立WebSocket连接前还要先建立HTTP连接。
-HLS: Ht
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a>
-            </div>
-            <div class="date"><time datetime="2017-07-09T16:18:27.000Z" itemprop="datePublished">2017-07-10</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/07/10/jsStack/">使用 js 实现栈并解决正整数&quot;进制转换&quot;的问题</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            &emsp;&emsp;在这篇文章中，我将结合 js 的构造函数以及 js 的数组，实现数据结构栈并利用 js 实现的栈来实现正整数的 进制转换算法，即将正整数转换为其他进制的数（包括二进制到十六进制）。
-(一) 利用 js 实现数据结构栈&emsp;&emsp;充分利用 ECMAScript 原生的构造函数以及原生的数据结构数组，可以很容易地实现栈。代码以及注释如下：12345678910111
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/技术类-前端/">技术类-前端</a>
-            </div>
-            <div class="date"><time datetime="2017-05-31T13:07:48.000Z" itemprop="datePublished">2017-05-31</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/05/31/path-join-path-resolve/">path.join 与 path.resolve 的区别</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            何为 path ？&emsp;&emsp;path是node提供的用于处理文件路径的小工具，我们可以通过以下方式引入该模块：1var path = require('path');
-&emsp;&emsp;path.join以及path.resolve便是该模块中的两个方法。官方对这两个方法的定义分别如下：
-
-
-
-path.join([path1][, path2][, …])
-path.reso
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
-
-
-    <nav id="page-nav">
-        <span class="pages">第 1 页，共 3 页</span>
-        <span class="page-number current">1</span><a class="page-number" href="/categories/技术类-前端/page/2/">2</a><a class="page-number" href="/categories/技术类-前端/page/3/">3</a><a class="extend next" rel="next" href="/categories/技术类-前端/page/2/">&raquo;</a>
-    </nav>
-
+    </section>
 
 
                         </div>
@@ -479,6 +299,19 @@ path.reso
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/10/24/mouseWithoutBorders/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">多 PC 终端调试利器之 Mouse without Borders</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
