@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>事件流概述 | 肥锐&#39;s 技术栈</title>
+    <title>windows 下解决 gyp ERR | 肥锐&#39;s 技术栈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="JavaScript,DOM" />
+        <meta name="keywords" content="JavaScript,node" />
     
-    <meta name="description" content="&amp;emsp;&amp;emsp;事件流描述的是从页面中接收事件的顺序，而 IE 和 Netscape 提出了差不多是完全相反的事件流的概念。IE 的事件流是事件冒泡，而 Netscape Communicator 的事件流是事件捕获。 IE的事件冒泡&amp;emsp;&amp;emsp;事件冒泡，即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）。以下面的页面为例">
-<meta name="keywords" content="JavaScript,DOM">
+    <meta name="description" content="&amp;emsp;&amp;emsp;在 windows 上执行 npm 安装但凡涉及到 canvas，比如我最近就在使用一个 canvas 库 Fabric，就经常会报 gyp ERR。所以我的解决思路是查找安装 canvas 失败的解决方法，只要解决了 canvas 安装失败的问题，就可以解决 gyp ERR。  解决步骤&amp;emsp;&amp;emsp;（1）npm i -g node-gyp &amp;emsp;&amp;ems">
+<meta name="keywords" content="JavaScript,node">
 <meta property="og:type" content="article">
-<meta property="og:title" content="事件流概述">
-<meta property="og:url" content="http://www.whbxyr.cn/2016/04/24/event/index.html">
+<meta property="og:title" content="windows 下解决 gyp ERR">
+<meta property="og:url" content="http://www.whbxyr.cn/2018/11/12/gypERR/index.html">
 <meta property="og:site_name" content="肥锐&#39;s 技术栈">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;事件流描述的是从页面中接收事件的顺序，而 IE 和 Netscape 提出了差不多是完全相反的事件流的概念。IE 的事件流是事件冒泡，而 Netscape Communicator 的事件流是事件捕获。 IE的事件冒泡&amp;emsp;&amp;emsp;事件冒泡，即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）。以下面的页面为例">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;在 windows 上执行 npm 安装但凡涉及到 canvas，比如我最近就在使用一个 canvas 库 Fabric，就经常会报 gyp ERR。所以我的解决思路是查找安装 canvas 失败的解决方法，只要解决了 canvas 安装失败的问题，就可以解决 gyp ERR。  解决步骤&amp;emsp;&amp;emsp;（1）npm i -g node-gyp &amp;emsp;&amp;ems">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://www.whbxyr.cn/2016/04/24/event/1.png">
-<meta property="og:updated_time" content="2018-06-01T15:16:53.560Z">
+<meta property="og:image" content="http://www.whbxyr.cn/2018/11/12/gypERR/1.png">
+<meta property="og:updated_time" content="2018-11-12T15:07:23.142Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="事件流概述">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;事件流描述的是从页面中接收事件的顺序，而 IE 和 Netscape 提出了差不多是完全相反的事件流的概念。IE 的事件流是事件冒泡，而 Netscape Communicator 的事件流是事件捕获。 IE的事件冒泡&amp;emsp;&amp;emsp;事件冒泡，即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）。以下面的页面为例">
-<meta name="twitter:image" content="http://www.whbxyr.cn/2016/04/24/event/1.png">
+<meta name="twitter:title" content="windows 下解决 gyp ERR">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;在 windows 上执行 npm 安装但凡涉及到 canvas，比如我最近就在使用一个 canvas 库 Fabric，就经常会报 gyp ERR。所以我的解决思路是查找安装 canvas 失败的解决方法，只要解决了 canvas 安装失败的问题，就可以解决 gyp ERR。  解决步骤&amp;emsp;&amp;emsp;（1）npm i -g node-gyp &amp;emsp;&amp;ems">
+<meta name="twitter:image" content="http://www.whbxyr.cn/2018/11/12/gypERR/1.png">
     
 
     
@@ -145,14 +145,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-event" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-gypERR" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        事件流概述
+        windows 下解决 gyp ERR
         </h1>
     
 
@@ -162,33 +162,29 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2016/04/24/event/" class="article-date">
-            <time datetime="2016-04-24T09:38:56.000Z" itemprop="datePublished">2016-04-24</time>
+        <a href="/2018/11/12/gypERR/" class="article-date">
+            <time datetime="2018-11-12T13:06:34.000Z" itemprop="datePublished">2018-11-12</time>
         </a>
     </div>
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/DOM/">DOM</a>, <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+        <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>, <a class="tag-link" href="/tags/node/">node</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>&emsp;&emsp;<code>事件流</code>描述的是从页面中接收事件的顺序，而 IE 和 Netscape 提出了差不多是完全相反的事件流的概念。IE 的事件流是<code>事件冒泡</code>，而 Netscape Communicator 的事件流是<code>事件捕获</code>。</p>
-<h3 id="IE的事件冒泡"><a href="#IE的事件冒泡" class="headerlink" title="IE的事件冒泡"></a><font style="color: #0ff;">IE的事件冒泡</font></h3><p>&emsp;&emsp;事件冒泡，即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）。以下面的页面为例：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Event Bubbling Example<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"myDiv"</span>&gt;</span>Click Me<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;如果你单击了页面中的<code>&lt;div&gt;</code>元素，那么这个click事件会按照如下顺序传播：<br>(1) <code>&lt;div&gt;</code><br>(2) <code>&lt;body&gt;</code><br>(3) <code>&lt;html&gt;</code><br>(4) <code>document</code><br>&emsp;&emsp;IE5.5 及更早的版本中的事件冒泡会跳过<code>&lt;html&gt;</code>元素（从<code>&lt;body&gt;</code>直接跳到document）。IE9、Firefox、Chrome 和 Safari 则将事件一直冒泡到 window 对象。</p>
-<h3 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a><font style="color: #0ff;">事件捕获</font></h3><p>&emsp;&emsp;事件捕获的思想是不太具体的节点应该更早接收到事件，而最具体的节点应该最后接收到事件。事件捕获的用意在于在事件达到预定目标之前捕获它。如果仍以前面的HTML页面作为例子，那么单击<code>&lt;div&gt;</code>元素就会以下列顺序触发 click 事件：<br>(1) <code>document</code><br>(2) <code>&lt;html&gt;</code><br>(3) <code>&lt;body&gt;</code><br>(4) <code>&lt;div&gt;</code><br>&emsp;&emsp;虽然事件捕获是 Netscape Communicator 唯一支持的事件流模型，但 IE9、Safari、Chrome、Opera 和 Firefox 目前也都支持这种事件流模型。尽管“DOM2级事件”规范要求事件应该从 document 对象开始传播，但这些浏览器都是从 window 对象开始捕获事件的。</p>
-<h2 id="由于老版本的浏览器不支持，因此很少有人使用事件捕获，建议使用事件冒泡，在有特殊需要的时候再使用事件捕获。"><a href="#由于老版本的浏览器不支持，因此很少有人使用事件捕获，建议使用事件冒泡，在有特殊需要的时候再使用事件捕获。" class="headerlink" title="由于老版本的浏览器不支持，因此很少有人使用事件捕获，建议使用事件冒泡，在有特殊需要的时候再使用事件捕获。"></a>由于老版本的浏览器不支持，因此很少有人使用事件捕获，建议使用事件冒泡，在有特殊需要的时候再使用事件捕获。</h2><h3 id="DOM-事件流"><a href="#DOM-事件流" class="headerlink" title="DOM 事件流"></a><font style="color: #0ff;;">DOM 事件流</font></h3><p>&emsp;&emsp;“DOM2级事件”规定的事件流包括三个阶段：事件捕获阶段、处于目标阶段和事件冒泡阶段。它们的发生顺序如下：<br>(1) 事件捕获，为截获事件提供了机会，这一过程不会传播到实际的事件目标<br>(2) 实际的目标接收到事件，于是事件在此目标上发生，并在事件处理中被看成冒泡阶段的一部分<br>(3) 冒泡阶段，可以在这个阶段对事件做出响应，然后事件又传播回文档。<br>&emsp;&emsp;仍以前面的HTML页面作为例子，DOM2级事件流如下图：<br><img src="/2016/04/24/event/1.png" alt="DOM 事件流"></p>
-<h3 id="事件处理程序："><a href="#事件处理程序：" class="headerlink" title="事件处理程序："></a><font style="color: #f00;">事件处理程序：</font></h3><p>&emsp;&emsp;事件处理程序分<strong>HTML事件处理程序</strong>、<strong>DOM0级事件处理程序</strong>、<strong>DOM2级事件处理程序</strong>、<strong>IE事件处理程序</strong>四种。为了兼容各种浏览器，也催生出了<strong>跨浏览器的事件处理程序</strong>。</p>
-<h4 id="HTML事件处理程序"><a href="#HTML事件处理程序" class="headerlink" title="HTML事件处理程序"></a><font style="color: #f0f;">HTML事件处理程序</font></h4><p>&emsp;&emsp;示例如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="function"><span class="keyword">function</span> <span class="title">showMsg</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    alert(<span class="string">'Hello world!'</span>);</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"Click Me"</span> <span class="attr">onclick</span>=<span class="string">"showMsg()"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="DOM0级事件处理程序"><a href="#DOM0级事件处理程序" class="headerlink" title="DOM0级事件处理程序"></a><font style="color: #f0f;">DOM0级事件处理程序</font></h4><p>&emsp;&emsp;示例如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">'myBtn'</span>);</span><br><span class="line">btn.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 弹出“myBtn”</span></span><br><span class="line">    alert(<span class="keyword">this</span>.id);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="DOM2级事件处理程序"><a href="#DOM2级事件处理程序" class="headerlink" title="DOM2级事件处理程序"></a><font style="color: #f0f;">DOM2级事件处理程序</font></h4><p>&emsp;&emsp;示例如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">'myBtn'</span>);</span><br><span class="line"><span class="keyword">var</span> handler = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>.id);</span><br><span class="line">&#125;;</span><br><span class="line">btn.addEventListener(<span class="string">'click'</span>, handler, <span class="literal">false</span>);</span><br><span class="line"><span class="comment">// 指定事件处理程序的名称才能实现移除事件处理程序</span></span><br><span class="line">btn.removeEventListener(<span class="string">'click'</span>, handler, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure></p>
-<h4 id="IE事件处理程序"><a href="#IE事件处理程序" class="headerlink" title="IE事件处理程序"></a><font style="color: #f0f;">IE事件处理程序</font></h4><p>&emsp;&emsp;示例如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">'myBtn'</span>);</span><br><span class="line"><span class="keyword">var</span> handler = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(‘Clicked’);</span><br><span class="line">&#125;;</span><br><span class="line">btn.attachEvent(<span class="string">'onclick'</span>, handler);</span><br><span class="line"><span class="comment">// 指定事件处理程序的名称才能实现移除事件处理程序</span></span><br><span class="line">btn.detachEvent(<span class="string">'onclick'</span>, handler);</span><br></pre></td></tr></table></figure></p>
-<h4 id="跨浏览器的事件处理程序"><a href="#跨浏览器的事件处理程序" class="headerlink" title="跨浏览器的事件处理程序"></a><font style="color: #f0f;">跨浏览器的事件处理程序</font></h4><p>&emsp;&emsp;既然事件处理程序在不同浏览器上的实现方式不一样，那么能够跨浏览器的事件处理程序的存在就十分重要。关于跨浏览器的事件处理程序，可以观看我的另一篇文章——<a href="http://www.whbxyr.cn/2016/06/24/EventUtil/">兼容浏览器的事件处理程序 EventUtil</a>！</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a><font style="color: #f00;">总结</font></h3><p>在使用事件时，需要考虑如下一些内存与性能方面的问题。<br>1.有必要限制一个页面中事件处理程序的数量，数量太多会导致占用大量内存，而且也会让用户感觉页面反应不够灵敏。<br>2.建立在事件冒泡机制之上的事件委托技术，可以有效地减少事件处理程序的数量。<br>3.建议在浏览器卸载页面之前移除页面中的所有事件处理程序。</p>
+            <p>&emsp;&emsp;在 windows 上执行 npm 安装但凡涉及到 canvas，比如我最近就在使用一个 canvas 库 Fabric，就经常会报 gyp ERR。所以我的解决思路是查找安装 canvas 失败的解决方法，只要解决了 canvas 安装失败的问题，就可以解决 gyp ERR。</p>
+<p><img src="/2018/11/12/gypERR/1.png" alt="windows npm 安装 Fabric 报错"></p>
+<h2 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a><font style="color: #f00;">解决步骤</font></h2><p>&emsp;&emsp;（1）npm i -g node-gyp</p>
+<p>&emsp;&emsp;（2）npm install –global –production windows-build-tools<br>&emsp;&emsp;<font style="color: #f00;">注意：需要在有管理员权限的命令终端中执行。</font></p>
+<p><img src="/2018/11/12/gypERR/2.png" alt="安装 windows-build-tools 结果"></p>
+<p>&emsp;&emsp;（3）下载 <a href="http://ftp.gnome.org/pub/GNOME/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.1-20101229_win64.zip" target="_blank" rel="noopener">GTK2</a>，将下载下来的 zip 包解压到 C:\GTK。</p>
+<p>&emsp;&emsp;（4）这时候 npm install canvas 就可以正常安装不报 gyp ERR 了。</p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a><font style="color: #f00;">注意事项</font></h2><p>&emsp;&emsp;如果系统用户名是中文，还是会导致 npm 安装 canvas 报错，需要修改系统用户名为英文，方法参考文章 <a href="https://www.sohu.com/a/127599728_116178" target="_blank" rel="noopener">Win10 用户文件夹改名</a>，修改完成后再重新按照上面的步骤安装就行。</p>
 
         </div>
         <footer class="article-footer">
@@ -306,20 +302,10 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
         
 <nav id="article-nav">
     
-        <a href="/2016/04/28/asyncJs/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            异步加载 javascript 文件的方法总结
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2016/04/22/clearFloat/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/11/10/jsStrictMode/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">上一篇</strong>
-        <p class="article-nav-title">清除子元素浮动造成的影响</p>
+        <p class="article-nav-title">详解 JavaScript 严格模式</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
