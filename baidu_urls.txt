@@ -30,6 +30,5 @@ http://www.whbxyr.cn/2016/04/22/clearFloat/
 http://www.whbxyr.cn/2016/04/20/DOM/
 http://www.whbxyr.cn/2016/04/15/iframe/
 http://www.whbxyr.cn/2016/04/02/sortAlgorithm/
-http://www.whbxyr.cn/2015/07/18/whatUniversity/
 http://www.whbxyr.cn/2015/04/18/ajax/
 http://www.whbxyr.cn/2015/03/16/json/
